@@ -13,3 +13,37 @@
  *
  */
 @import "bootstrap";
+
+// Header Adjusting
+
+nav .navbar-brand,
+nav .nav-link {
+  color: #CAECFA;
+}
+
+// Home page appearence
+
+#home_jumbotron {
+  background-image: url(home_banner.jpg);
+  background-size: cover;
+}
+
+// Icons for picking user type
+
+.ps_triangle {
+  position: relative;
+  z-index: 10;
+
+}
+
+.audience_icon {
+  position: absolute;
+}
+
+.artist_icon {
+  position: absolute;
+}
+
+.venue_icon {
+  position: absolute;
+}

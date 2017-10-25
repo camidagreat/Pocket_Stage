@@ -1,14 +1,62 @@
 <%= provide(:title, "Home") %>
-<div class = "container text-center">
-  <h1 class="display-2" >Pocket Stage</h1>
-  <p class = "lead" >Coming soon.</p>
-  <div class="mx-auto w-50">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter your email to get info!"
-                                              aria-label="Enter your email to get info!">
-      <span class="input-group-btn">
-        <button class="btn btn-secondary" type="button">Sign up!</button>
-      </span>
+
+<div id="home_jumbotron" class="jumbotron jumbotron-fluid">
+  <div id="home_banner_text" class="container pt-5 text-center">
+    <h1 class="display-4">Pocket Stage</h1>
+    <p class="lead">Bringing the DIY music scene closer together; Artists, Audiences, and Venues.</p>
+  </div>
+
+  <!-- Button for asking to be emailed about Pocket Stage -->
+  <div class = "container text-center">
+    <div class="mx-auto w-50">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Email me"
+                                                aria-label="Email me">
+        <span class="input-group-btn">
+          <button id="mailing_email_button" class="btn btn-secondary" type="button">Sign up!</button>
+        </span>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Main content -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="mission_statement" class="col-lg-5">
+      <h1> The Mission</h1>
+      <p>In the music indutry, there is an eternal love-triangle ruling the space: Audience, Artist and Venue.
+        Each one needs the other two to survive, but they can never get enough.
+        Pocket Stage is the platform to connect the dots. Listeners can find more
+         artists, Artists can advertise their gigs, and Venues can bring in more money...
+         I mean people. So, where do you fall on the pyramid?
+       </p>
+    </div>
+    <div id="mission_statement" class="col-lg-5">
+      <h1> The Mission</h1>
+      <p>There is a Pyramid in the music industry: Audience, Artist and Venue.
+        Each one needs the other two to survive, but they can never get enough.
+        Pocket Stage is the platform to connect the dots. Listeners can find more
+         artists, Artists can advertise their gigs, and Venues can bring in more money...
+         I mean people. So, where do you fall on the pyramid?
+       </p>
+    </div>
+  </div>
+</div>
+
+<!-- Icon for picking which type of user you are -->
+
+<div class="container">
+  <div class="ps_triangle">
+    <img src="ps_triangle.png" class="img-fluid">
+  </div>
+  <div class="audience_icon">
+    <img src="audience_icon.png" class="img-fluid">
+  </div>
+  <div class="artist_icon">
+    <img src="artist_icon.png" class="img-fluid">
+  </div>
+  <div class="venue_icon">
+    <img src="venue_icon.png" class="img-fluid">
   </div>
 </div>
