@@ -30,20 +30,47 @@ nav .nav-link {
 
 // Icons for picking user type
 
+// #user_type_graphics {
+//   float: left;
+// }
+
 .ps_triangle {
   position: relative;
-  z-index: 10;
-
+  padding-top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .audience_icon {
   position: absolute;
+  display: block;
+  max-width: 100%;
+  right: 0;
+  :hover {
+    width: 335px;
+    height: auto;
+  }
 }
 
 .artist_icon {
   position: absolute;
+  display: block;
+  max-width: 100%;
+  top: 0;
+  :hover {
+    width: 305px;
+    height: auto;
+  }
 }
 
 .venue_icon {
   position: absolute;
+  display: block;
+  max-width: 100%;
+  right: 90%;
+  :hover {
+    width: 125px;
+    height: auto;
+  }
 }
