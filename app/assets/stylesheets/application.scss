@@ -14,13 +14,16 @@
  */
 @import "bootstrap";
 
-// Header Adjusting
+// Navbar
 
 nav .navbar-brand,
 nav .nav-link {
-  color: #CAECFA;
+  color: #CAECFA !important;
 }
 
+.dropdown-menu {
+  background-color: #EDF8FD;
+}
 // Home page appearence
 
 #home_jumbotron {
@@ -30,24 +33,26 @@ nav .nav-link {
 
 // Icons for picking user type
 
-// #user_type_graphics {
-//   float: left;
-// }
+#user_type_graphics {
+  position: relative;
+  max-width: 100%;
+  resize: both;
+}
 
 .ps_triangle {
-  position: relative;
-  padding-top: 15rem;
+  padding-top: 16rem;
   margin-right: auto;
   margin-left: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .audience_icon {
   position: absolute;
-  display: block;
-  max-width: 100%;
   right: 0;
-  :hover {
+  top: 80%;
+  &:hover {
     width: 335px;
     height: auto;
   }
@@ -55,10 +60,9 @@ nav .nav-link {
 
 .artist_icon {
   position: absolute;
-  display: block;
-  max-width: 100%;
   top: 0;
-  :hover {
+  right: 35%;
+  &:hover {
     width: 305px;
     height: auto;
   }
@@ -66,11 +70,31 @@ nav .nav-link {
 
 .venue_icon {
   position: absolute;
-  display: block;
-  max-width: 100%;
-  right: 90%;
-  :hover {
-    width: 125px;
+  width: 150px;
+  right: 70%;
+  top: 90%;
+  margin-right: 10px;
+  &:hover {
+    width: 170px;
     height: auto;
+  }
+}
+
+// Screen size adjustments
+
+@media (max-width: 768px ) {
+  .venue_icon, .artist_icon, .audience_icon {
+    position: inherit;
+    float: left;
+    height: auto;
+    padding-left: 200ps;
+  }
+
+  .ps_triangle {
+    @include sr-only;
+  }
+
+  #artist_search_nav {
+    @include sr-only;;
   }
 }
