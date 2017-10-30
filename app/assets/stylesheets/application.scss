@@ -14,6 +14,12 @@
  */
 @import "bootstrap";
 
+// Website Body
+
+body {
+  padding-top: 6rem;
+}
+
 // Navbar
 
 nav .navbar-brand,
@@ -24,6 +30,36 @@ nav .nav-link {
 .dropdown-menu {
   background-color: #EDF8FD;
 }
+
+// Footer
+
+footer {
+  margin-top: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  border-top: 1px solid;
+  clear: both;
+  width: 100%;
+  a {
+    color: #CAECFA;
+    &:hover {
+      color: white;
+    }
+  }
+  .title {
+    color: #CAECFA !important;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
 // Home page appearence
 
 #home_jumbotron {
@@ -63,21 +99,25 @@ nav .nav-link {
   top: 0;
   right: 35%;
   &:hover {
-    width: 305px;
+    width: 300px;
     height: auto;
   }
 }
 
 .venue_icon {
   position: absolute;
-  width: 150px;
+  width: 140px;
   right: 70%;
-  top: 90%;
+  top: 85%;
   margin-right: 10px;
   &:hover {
-    width: 170px;
+    width: 155px;
     height: auto;
   }
+}
+
+#home_page_spacer {
+  height: 200px
 }
 
 // Screen size adjustments
@@ -98,3 +138,5 @@ nav .nav-link {
     @include sr-only;;
   }
 }
+
+// Sign up pages

@@ -1,6 +1,6 @@
-class DeviseCreateArtists < ActiveRecord::Migration[5.1]
+class DeviseCreateMusicalEntities < ActiveRecord::Migration[5.1]
   def change
-    create_table :artists do |t|
+    create_table :musical_entities do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -34,9 +34,9 @@ class DeviseCreateArtists < ActiveRecord::Migration[5.1]
       t.timestamps null: false
     end
 
-    add_index :artists, :email,                unique: true
-    add_index :artists, :reset_password_token, unique: true
-    # add_index :artists, :confirmation_token,   unique: true
-    # add_index :artists, :unlock_token,         unique: true
+    add_index :musical_entities, :email,                unique: true
+    add_index :musical_entities, :reset_password_token, unique: true
+    # add_index :musical_entities, :confirmation_token,   unique: true
+    # add_index :musical_entities, :unlock_token,         unique: true
   end
 end
