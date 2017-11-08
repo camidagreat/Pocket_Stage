@@ -33,12 +33,12 @@ nav .nav-link {
 
 // Footer
 
-footer {
+.footer {
   margin-top: 320px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
-  border-top: 1px solid;
+  border: 1px solid;
   clear: both;
   width: 100%;
   a {
@@ -135,7 +135,7 @@ footer {
   }
 
   #artist_search_nav {
-    @include sr-only;;
+    @include sr-only;
   }
 }
 
