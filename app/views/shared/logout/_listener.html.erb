@@ -1,0 +1,11 @@
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">Account</a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item"><%= link_to "Profile", class:"dropdown-item" %></a>
+    <a class="dropdown-item"><%= link_to "Settings", class:"dropdown-item" %></a>
+    <a class="divider"></a>
+    <a class="dropdown-item">
+      <%= link_to "Log out", destroy_listener_session_path, method: :delete, class:"dropdown-item" %>
+    </a>
+  </div>
+</li>

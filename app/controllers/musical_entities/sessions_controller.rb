@@ -11,7 +11,7 @@ class MusicalEntities::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  # DELETE /resource/sign_out
+  # DELETE /musical_entities/sign_out
   # def destroy
   #   super
   # end

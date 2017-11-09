@@ -1,6 +1,7 @@
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
   <a class="navbar-brand order-1 ml-5 float-right" href="#">Pocket Stage</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -12,17 +13,31 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sign Up
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="http://google.com">Audience</a>
-          <a class="dropdown-item" href="http://google.com">Artist</a>
-          <a class="dropdown-item" href="http://google.com">Venue</a>
-        </div>
-      </li>
+      <% if !signed_in? %>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign Up
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/listeners/sign_up">Audience</a>
+            <a class="dropdown-item" href="/musical_entities/sign_up">Artist</a>
+            <a class="dropdown-item" href="/venues/sign_up">Venue</a>
+          </div>
+        </li>
+      <% end %>
+
+      <% if listener_signed_in? %>
+       <%= render 'shared/logout/listener' %>
+      <% end %>
+      <% if musical_entity_signed_in? %>
+       <%= render 'shared/logout/musical_entity' %>
+      <% end %>
+      <% if venue_signed_in? %>
+       <%= render 'shared/logout/venue' %>
+      <% end %>
     </ul>
+
     <form id="artist_search_nav" class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="City" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find and artist near me</button>
