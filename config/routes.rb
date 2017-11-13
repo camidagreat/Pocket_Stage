@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'shows/new'
+
+  get 'shows/edit'
+
   devise_for :musical_entities, path: 'musical_entities'
   devise_for :venues, path: 'venues'
   devise_for :listeners, path: 'listeners'
