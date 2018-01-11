@@ -18,7 +18,23 @@
 
 body {
   padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.make-footer-sticky {
+  flex: 1;
+}
+
+// Animations
+
+// Homepage Animations
+
+// .come-in {
+//   transform: translateX(150px);
+//   animation: come-in 0.8s ease forwards;
+// }
 
 // Navbar
 

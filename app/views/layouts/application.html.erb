@@ -5,6 +5,7 @@
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
     <%= render 'layouts/bootstrap_reqs' %>
+    <script src="assets/javascript/application.js"></script>
   </head>
 
   <body style="background-color: #EDF8FD">
@@ -15,6 +16,7 @@
       <% end %>
       <%= yield %>
     </div>
+    <div class="make-footer-sticky"></div>
     <%= render 'layouts/footer' %>
   </body>
 </html>

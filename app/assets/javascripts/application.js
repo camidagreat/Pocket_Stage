@@ -15,3 +15,5 @@
 //= require bootstrap
 //= require jquery
 //= require jquery_ujs
+
+$('.user_figures').hide().fadeIn(1000);
