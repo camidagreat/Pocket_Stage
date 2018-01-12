@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'show/new'
+
+  get 'show/edit'
+
   get 'shows/new'
 
   get 'shows/edit'
